@@ -1,6 +1,5 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {PopupComponent} from "../popup/popup.component";
 import {RouterModule} from "@angular/router";
 import {TooltipButtonComponent} from "./tooltip-button.component";
 
@@ -10,11 +9,9 @@ import {TooltipButtonComponent} from "./tooltip-button.component";
     RouterModule
   ],
   declarations: [
-    PopupComponent,
     TooltipButtonComponent
   ],
   exports:[
-    PopupComponent,
     TooltipButtonComponent
   ]
 })

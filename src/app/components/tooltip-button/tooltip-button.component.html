@@ -1,3 +1,7 @@
 
-<popup></popup>
-<button (click)="activate()">{{label}}</button>
+<div class="tooltip" [ngClass]="{'top':placement == 'top', 'bottom':placement == 'bottom', 'on':tooltipVisible}" role="tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner"> {{tooltip}}</div>
+</div>
+
+<button (click)="activate(true)" data-toggle="tooltip" class="btn btn-default" type="button" aria-label="'showToolTip'">{{label}}</button>

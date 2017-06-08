@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+$max-width:700px;
+$min-height:1000px;
+$btn-default-color:blue;
+
+.container {
+
+  .main {
+    margin:0 auto;
+    margin-top:100px;
+    max-width: $max-width;
+    min-height:$min-height;
+    border:1px solid gray;
+    padding:60px;
+  }
+
+}
+
+.tooltip {
+  display: inline-block;
+  &.top {
+    margin-top: -33px;
+  }
+  &.bottom {
+    margin-top:33px;
+  }
+  &.on {
+    opacity:1;
+  }
+}
